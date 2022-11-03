@@ -1,0 +1,31 @@
+.TryNolt-container {
+  position: sticky;
+  bottom: 1.25rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 1.1rem 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 690px;
+  margin-inline: auto;
+  color: black;
+  font-size: 14.4px;
+  margin-top: 1rem;
+}
+
+.Create-board-btn {
+  color: white;
+  background-color: #382946;
+  margin: 4px 4px 4px 16px;
+  border-radius: 4px;
+  font-size: 12.8px !important;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.Create-board-btn:hover {
+  background-color: #2a1f34 !important;
+}

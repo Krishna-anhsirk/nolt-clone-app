@@ -85,7 +85,8 @@ const testimonials2 = [
     img: "https://nolt.io/static/dist/images/landing/testimonial-guido.79ae0f4b86.jpg",
     name: "Guido Rosso",
     from: "Rive",
-    //twitter
+    social:
+      "https://nolt.io/static/dist/images/landing/testimonial-tweet.366304717c.png",
   },
   {
     feedback: "My users are engaged and happy like never before",
@@ -116,7 +117,8 @@ const testimonials3 = [
     img: "https://nolt.io/static/dist/images/landing/testimonial-tomwatson.c8c24550f9.jpg",
     name: "Tom Watson",
     from: "Glass",
-    //twitter
+    social:
+      "https://nolt.io/static/dist/images/landing/testimonial-tweet.366304717c.png",
   },
   {
     feedback:
@@ -125,7 +127,8 @@ const testimonials3 = [
     img: "https://nolt.io/static/dist/images/landing/testimonial-letterboxd.d66b45c754.jpg",
     name: "Letterboxd",
     from: "@letterboxd",
-    //twitter
+    social:
+      "https://nolt.io/static/dist/images/landing/testimonial-tweet.366304717c.png",
   },
   {
     feedback:
@@ -154,6 +157,8 @@ const testimonials3 = [
     img: "https://nolt.io/static/dist/images/landing/testimonial-tiimo.b0acff8ade.jpg",
     name: "Tiimo",
     from: "@tiimoapp",
+    social:
+      "https://nolt.io/static/dist/images/landing/testimonial-tweet.366304717c.png",
   },
 ];
 

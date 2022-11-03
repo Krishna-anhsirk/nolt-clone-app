@@ -1,0 +1,78 @@
+.Testimonials {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1280px;
+  transition: max-width 0.5s ease 0s;
+}
+
+.Testimonials-desc-container {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 690px;
+  transition: max-width 0.5s ease 0s;
+}
+
+.Testimonials-statement {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.Testimonials-desc {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 0px 1rem;
+}
+
+/* Testimonals */
+.People-testimonials {
+  display: flex;
+}
+.People-testimonials > * {
+  flex: 1 1 0%;
+}
+.Testimonial-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  color: var(--color-text-default);
+  text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 2rem 2.5rem;
+  margin: 2rem 1rem;
+}
+.User-details {
+  position: relative;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  line-height: 1.3;
+  font-size: 1rem;
+}
+.User-details img {
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-right: 1.19rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px inset;
+}
+img {
+  max-width: 100%;
+}
+.User-details-text {
+  flex-direction: column;
+}
+
+/* Tablet testimonials  */
+
+/* Mobile testimonials  */

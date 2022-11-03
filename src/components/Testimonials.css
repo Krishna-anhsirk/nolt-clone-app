@@ -38,7 +38,9 @@
 .People-testimonials > * {
   flex: 1 1 0%;
 }
+
 .Testimonial-card {
+  text-align: center;
   position: relative;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 5px;
@@ -74,5 +76,19 @@ img {
 }
 
 /* Tablet testimonials  */
+@media screen and (max-wdith: 1280px) {
+  .People-testimonials > * {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+}
 
 /* Mobile testimonials  */
+@media screen and (max-width: 800px) {
+  .People-testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+}

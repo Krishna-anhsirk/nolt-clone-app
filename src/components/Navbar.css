@@ -4,10 +4,10 @@
 
 .Navbar {
   display: flex;
-  padding: 24px 32px;
+  padding: 1.5rem 2rem;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 0.75rem; */
+  font-size: 1.1rem;
 }
 
 .Navbar-logo img {
@@ -25,12 +25,6 @@
   font-size: 14.4px;
 }
 
-.Navbar-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.5s;
-  border-radius: 4px;
-}
-
 .Create-btn {
   background-color: #382946;
   margin: 4px 4px 4px 16px;
@@ -44,17 +38,6 @@
 
 /* For mobile menu  */
 
-.Navbar-mobile {
-  flex-direction: column;
-}
-
-.Navbar-mobile a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  font-size: 14.4px;
-}
-
 .Navbar-mobile-menu {
   display: none;
 }
@@ -67,8 +50,17 @@
 }
 
 .Navbar-mobile-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.04);
   transition: 0.5s;
+  border-radius: 4px;
+}
+
+.Menu-active a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14.4px;
+  background-color: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
 }
 

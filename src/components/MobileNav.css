@@ -1,0 +1,21 @@
+.Mobile-nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0px 1rem;
+}
+
+.Mobile-nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.Create-nolt-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0.75rem 0px;
+}

@@ -22,7 +22,7 @@
   margin: 0.75rem 0px;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 615px) {
   .Mobile-nav {
     display: none;
   }

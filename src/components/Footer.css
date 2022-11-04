@@ -1,0 +1,37 @@
+.Deer-image {
+  position: relative;
+  background-image: url(https\:\/\/nolt\.io\/static\/dist\/images\/landing\/footer\.2353da24de\.svg),
+    linear-gradient(to bottom, #fd6a65, #fff39b);
+  background-position: 80% bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 0px 38vh;
+  overflow: hidden;
+}
+
+.Footer-options {
+  background: rgb(255, 255, 255);
+  padding: 0px 1rem 2rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.Options {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.Options a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 1.4;
+}
+
+.Options a + ::before {
+  content: "·";
+  padding: 0px 0.75rem;
+}

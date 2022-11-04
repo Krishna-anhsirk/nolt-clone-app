@@ -1,9 +1,33 @@
-.Feedback-container {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.Hero-container {
   margin: 0px auto;
+  width: 100%;
+  max-width: 900px;
+  transition: max-width 0.5s ease 0s;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.Hero-text-container {
+  margin: 8rem auto 2.5rem;
   width: 100%;
   max-width: 690px;
   transition: max-width 0.5s ease 0s;
-  text-align: center;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 400;
 }
 
 .Hero-title {
@@ -12,13 +36,14 @@
     Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   font-weight: 400;
-  margin: 8rem auto 2.5rem;
+  margin: 0 auto;
 }
 
 .Hero-desc {
   font-size: 1.15rem;
   line-height: 1.6;
   text-align: center;
+  margin-top: 2.5rem;
   margin-bottom: 4rem;
   padding: 0px 1rem;
 }
@@ -26,11 +51,56 @@
 /* Caraousal  */
 
 .Carousal {
+  position: relative;
   display: flex;
-  margin-bottom: 4rem;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  animation: 1s ease 0s 1 normal none running llCao;
+  margin-top: -0.5rem;
 }
 
-.Carousal img {
-  width: 50vw;
-  height: 50vh;
+.Carousal > * {
+  /* width: 520px; */
+  min-width: 1000px;
+  z-index: 1;
+  transition: transform 0.15s ease 0s;
+  cursor: pointer;
+  height: 500px;
+}
+
+.Carousal-item {
+  width: 520px;
+  z-index: 1;
+  transition: transform 0.15s ease 0s;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.Carousal-item:first-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: scale(0.8) translate(-40%);
+}
+
+.Carousal-item:last-child {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: scale(0.8) translate(40%);
+}
+
+.Carousal-active-item {
+  width: 520px;
+  z-index: 2;
+  transition: transform 0.15s ease 0s;
+  cursor: initial;
+  opacity: 1;
+}
+
+.Carousal-active-item:nth-child(2) {
+  animation: 1s ease 0s 1 normal none running guEQxJ;
+  transform: scale(1);
 }

@@ -1,5 +1,6 @@
 import "./Testimonials.css";
 import TestimonialGenerator from "./TestimonialGenerator";
+import TryNoltBoard from "./TryNoltBoard";
 
 const testimonials1 = [
   {
@@ -190,6 +191,7 @@ function Testimonials() {
           <TestimonialGenerator data={testimonials3} />
         </div>
       </div>
+      <TryNoltBoard />
     </div>
   );
 }

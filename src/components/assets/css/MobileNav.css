@@ -3,6 +3,8 @@
   flex-direction: column;
   min-height: 100vh;
   padding: 0px 1rem;
+  min-width: 100vw;
+  overflow: hidden;
 }
 
 .Mobile-nav a {
@@ -18,4 +20,10 @@
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
   margin: 0.75rem 0px;
+}
+
+@media screen and (min-width: 601px) {
+  .Mobile-nav {
+    display: none;
+  }
 }

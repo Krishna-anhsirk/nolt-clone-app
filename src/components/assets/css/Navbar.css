@@ -64,11 +64,29 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 600px) {
   .Navbar-mobile-menu {
-    display: flex;
+    display: block;
   }
   .Navbar-menu {
     display: none;
+  }
+  .Navbar {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Menu-active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  .Navbar-menu a {
+    padding: 8px;
+  }
+  .Navbar {
+    padding: 1.5rem 0.5rem;
   }
 }

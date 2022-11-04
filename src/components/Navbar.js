@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./assets/css/Navbar.css";
 
 function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);

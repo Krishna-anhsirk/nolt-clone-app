@@ -9,11 +9,16 @@
   padding: 1.1rem 1rem;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  width: 690px;
   margin-inline: auto;
   color: black;
   font-size: 14.4px;
   margin-top: 1rem;
+  margin: 1rem 1rem 0;
+  min-width: 690px;
+}
+
+.TryNolt-text {
+  color: black !important;
 }
 
 .Create-board-btn {
@@ -28,4 +33,23 @@
 
 .Create-board-btn:hover {
   background-color: #2a1f34 !important;
+}
+
+/* For medium screens  */
+@media screen and (max-width: 800px) {
+  .TryNolt-container {
+    min-width: 90vw;
+  }
+}
+
+/* For mobile screens  */
+@media screen and (max-width: 600px) {
+  .TryNolt-container {
+    min-width: none;
+    flex-direction: column;
+    margin: 0 2vw !important;
+  }
+  .TryNolt-text {
+    margin-bottom: 0.75rem;
+  }
 }

@@ -1,4 +1,7 @@
-import "./Hero.css";
+import "./assets/css/Hero.css";
+import Carousel1 from "./assets/images/Carousal1.png";
+import Carousel2 from "./assets/images/Carousal2.png";
+import Carousel3 from "./assets/images/Carousal3.png";
 
 function Hero() {
   return (
@@ -14,18 +17,15 @@ function Hero() {
           </p>
         </div>
         <div className="Carousal">
-          <div
-            className="Carousal-item"
-            style={{ backgroundColor: "yellow" }}
-          ></div>
-          <div
-            className="Carousal-item Carousal-active-item"
-            style={{ backgroundColor: "black" }}
-          ></div>
-          <div
-            className="Carousal-item"
-            style={{ backgroundColor: "blue" }}
-          ></div>
+          <div className="Carousal-item">
+            <img src={Carousel1} alt="Carousel-1-pic" />
+          </div>
+          <div className="Carousal-item Carousal-active-item">
+            <img src={Carousel2} alt="Carousel-2-pic" />
+          </div>
+          <div className="Carousal-item">
+            <img src={Carousel3} alt="Carousel-3-pic" />
+          </div>
         </div>
       </div>
     </>

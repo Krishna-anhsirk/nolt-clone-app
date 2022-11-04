@@ -1,4 +1,4 @@
-import "./MobileNav.css";
+import "./assets/css/MobileNav.css";
 
 function MobileNav() {
   return (

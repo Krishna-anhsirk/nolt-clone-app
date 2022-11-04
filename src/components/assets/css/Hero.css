@@ -62,12 +62,9 @@ body {
 }
 
 .Carousal > * {
-  /* width: 520px; */
-  min-width: 1000px;
   z-index: 1;
   transition: transform 0.15s ease 0s;
   cursor: pointer;
-  height: 500px;
 }
 
 .Carousal-item {
@@ -82,14 +79,14 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  transform: scale(0.8) translate(-40%);
+  transform: scale(0.8) translate(-15%);
 }
 
 .Carousal-item:last-child {
   position: absolute;
   top: 0px;
   right: 0px;
-  transform: scale(0.8) translate(40%);
+  transform: scale(0.8) translate(15%);
 }
 
 .Carousal-active-item {
@@ -103,4 +100,46 @@ body {
 .Carousal-active-item:nth-child(2) {
   animation: 1s ease 0s 1 normal none running guEQxJ;
   transform: scale(1);
+}
+
+/* For Tablet screen */
+@media screen and (max-width: 950px) {
+  .Carousal-item {
+    width: 50%;
+    height: 50%;
+  }
+  .Carousal-item:first-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: scale(0.8) translate(20%);
+  }
+
+  .Carousal-item:last-child {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: scale(0.8) translate(-20%);
+  }
+  .Carousal-active-item {
+    transform: translateY(-5%) !important;
+  }
+}
+
+/* For Mobile screens */
+@media screen and (max-width: 600px) {
+  .Carousal-item {
+    display: none;
+  }
+  .Carousal-active-item {
+    display: block;
+    width: 80%;
+  }
+  .Hero-text-container {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .Hero-title {
+    font-size: 2rem;
+  }
 }
